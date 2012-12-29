@@ -1,9 +1,12 @@
 en:
   or: or
-  newsletter_ok_header: "You are subscribed to the newsletter!"
-  newsletter_ok_body: "Your email is now in our newsletter list, thanks for subscribing!"
-  newsletter_error_header: "Woops! There was an error."
-  newsletter_error_body: "Your email could not be added to our newsletter list, please try again later!"
+  until: "until"
+  no: "No"
+  yes: "Yes"
+  newsletter_ok_header: ""
+  newsletter_ok_body: "Awesome! Your e-mail is in our list! Thanks a lot!"
+  newsletter_error_header: "Oh sorry! There was an error."
+  newsletter_error_body: "Your e-mail could not be add to our list. Do not give up! We can make it again later!"
   views:
     pagination:
       next: next
@@ -11,137 +14,148 @@ en:
       truncate: "..."
   statistics:
     backers:
-      subtitle: backers
+      subtitle: "registered"
     goal:
       subtitle: "total of %{total}"
-  project_by: "project by"
-  with: ~
-  leader_id: ~
-  tell_about_this_back: "Tell the world about your support!"
-  share_my_backs: "See the projects that i support in Catarse!"
-  tell_about_this_project: "Tell the world about your project!"
-  share_my_projects: "See my created projects in Catarse!"
-  count_backed_projects: "backed %{total} projects"
+  project_by: "Who is organising?"
+  with: "with"
+  leader_id: "This gathering is with: (Id number of the leader)"
+  tell_about_this_back: "Share with your friends that you are in!"
+  share_my_backs: "Check over the gatherings that I have joined"
+  tell_about_this_project: "Tell the World about your gathering!"
+  share_my_projects: "Have a look on my gathering in Nos.vc!"
+  count_backed_projects: "has joined %{total} gatherings"
   footer:
     titles:
-      info: "Useful Information"
-      opendata: "nice statistics"
-      social: "like the catarse?"
-      newsletter: "receive our newslatter"
+      info: "Menu"
+      opendata: "Magic numbers"
+      social: "Lets get together"
+      newsletter: "receive our newsletter"
     stats:
-      backers: Backers
-      backs: Backs
-      total_backed: Backed
-      users: Users
-      funded_projects: "Successful projects"
-      active_projects: "Projects on air now"
+      users: "people part of Nos.vc"
+      backs: "sign ups in gatherings"
+      total_backers: "people have got together"
+      funded_projects: "cool gatherings have already happened"
+      active_projects: "gatherings are open and waiting for you"
     links:
-      how_works: "How It works"
-      faq: F.A.Q./Help
+      how_works: "How it works"
+      faq: "Ajuda"
       terms: "Terms of use"
       policy: "Privacy Policy"
-      contact: Contact
-      about: ~
+      contact: "Contact"
+      about: "About"
+      help: "Help!"
   main:
     links:
-      selected: "explore more projects selected"
-      expiring: "explore more expiring projects"
-      recents: "explore more recent projects"
-  sidebar:
-    titles:
-      blog: blog
-      facebook: "have enjoyed our face?"
-      twitter: "@catarse_"
-      newsletter: "want to receive news?"
-      faq: "have any doubt?"
-      schedule: calendar
-    buttons:
-      newsletter: submit
+      selected: "Highlights"
+      expiring: "Last call!"
+      recents: "Newest"
   sections:
     selection:
-      title: selection
-      description: ~
+      title: "Highlights"
+      description: "Inspiring gatherings selected by our team!"
     expiring:
-      title: expiring
-      description: ~
+      title: "Last call"
+      description: "Run Forest! Last chance to join!"
     recents:
-      title: recents
-      description: ~
+      title: "Newest"
+      description: "Join and make these gatherings happen!"
     partners:
-      title: partners
-      description: ~
-    mother_look_us: ~
-  "no": "No"
-  "yes": "Yes"
-  accept_terms_html: "I have read and accepted the %{link}."
+      title: "Channels"
+      description: "Have a look on the gatherings supported by these guys:"
+    mother_look_us: "Making mommy proud:"
+  accept_terms_html: "I read and agree with the %{guidelines} and the %{terms} of the Nós.vc."
+  slider:
+    top:
+      explore:
+        title: "Explore gatherings"
+        text: "<span>Learn</span> something new. Sing in for a gathering <span>in your city</span>."
+      create:
+        title: "Create a gathering"
+        text: "Share your <span>passion</span> and <span>gather</span> with other passionate"
+      how_works:
+        title: "How it works"
+        text: "<span>Learn</span> and <span>share</span> together with people passionate for the same things."
   activerecord:
     errors:
       models:
         user:
           attributes:
             email:
-              not_found: "Your email is not registered, please verify the address or create a new account"
+              not_found: "Your e-mail is not registered yet, check your data or sign up."
     attributes:
       backer:
-        value: Value
+        value: "Value:"
       project:
-        category: Category
-        expires_at: Deadline
-        headline: Headline
-        image_url: "Image URL"
-        name: Name
-        user_id: "User Id"
-        video_url: "Video URL"
+        category: "City:"
+        expires_at: "Until:"
+        headline: "How would you explain your gathering in one tweet (140 characters)?"
+        image_url: "Image:"
+        name: "What is the title of your gathering?"
+        user_id: "User's Id:"
+        video_url: "Video's URL:"
+        leader_id: "This gathering is lead by:"
+        leader_bio: "Tiny, really tiny, biography:"
+        location: "Where?"
       reward:
-        description: Description
-        maximum_backers: "Maximum backers"
-        minimum_value: "Minimum value"
+        description: "Types of registration:"
+        maximum_backers: "Limit of attendants:"
+        minimum_value: "Price (€):"
       user:
-        address_city: City
-        address_complement: Complement
-        address_neighbourhood: Neighbourhood
-        address_number: Number
-        address_state: State
-        address_street: Street
-        address_zip_code: "Zip code"
-        cpf: CPF
-        current_password: "Current password"
-        email: Email
-        full_name: "Full name"
-        name: Name
-        password: Password
-        password_confirmation: "Password Confirmation"
-        phone_number: "Mobile phone number"
+        address_city: "City:"
+        address_complement: "Complement:"
+        address_neighbourhood: "District:"
+        address_number: "Number:"
+        address_state: "State:"
+        address_street: "Address:"
+        address_zip_code: "Zipcode:"
+        cpf: "XXXXXXXXX CPF ONLY BRAZIL"
+        current_password: "Current Password:"
+        email: "Email:"
+        full_name: "Full name:"
+        name: "Name:"
+        password: "Password:"
+        password_confirmation: "Password once more:"
+        phone_number: "Mobile Phone:"
+      dynamic_field:
+        input_name: "Which question the attendants must answer?"
+        required: "Mandatory answer."
+        project: "Project"
     models:
-      backer: Backer
-      category: Category
-      project: Project
-      reward: Reward
+      backer: "Attendants"
+      category: "Cities"
+      project: "Gatherings"
+      reward: "Ways to join"
+      dynamic_field: "Dynamic fields"
+      curated_page: "Channels"
+      update: "Updates"
+      user: "Users"
+      projects_curated_page: "Curated Gatherings"
   backer:
     display_confirmed_at: "%{time_ago} ago"
-    reward_must_be_from_project: "must be from the same project"
-    should_not_back_if_maximum_backers_been_reached: "has reached its maximum backers"
+    reward_must_be_from_project: "must be from the same gathering"
+    should_not_back_if_maximum_backers_been_reached: "has reached its maximum capacity"
     value_must_be_at_least_rewards_value: "must be at least %{minimum_value} for the selected reward"
-  backer_plural: backers
-  backer_singular: backer
+  backer_plural: attendants
+  backer_singular: attendant
   click_here: "Click here"
   clicking_here: "clicking here"
   comment:
     display_time: "%{time_ago} ago"
   credits:
     index:
-      back_date: "Back date"
+      back_date: "Registration date"
       current_credits_html: "Your current balance is <span id=\"current_credits\">%{credits}</span> in credits."
-      important_html: "You have <strong>up to 180 days after the payment date</strong> to ask for a refund. If you ask for a refund, the value of your payment will be deducted from your credits."
-      project: Project
+      important_html: "You have <strong>up to 180 days after the payment date</strong>to ask for a refund. If you ask for a refund, the value of your payment will be deducted from your credits."
+      project: "Gathering"
       refund_expration_date: "Refund deadline"
-      refunded: Refunded
-      refunds_title: "Payments that can be refunded"
+      refunded: "Refunded"
+      refunds_title: "Payments that can be refunded:"
       request_refund: "Request refund"
-      requested_refund: "Requested refund"
-      status: Status
+      requested_refund: "Requested refund."
+      status: "Status"
       title: "My credits"
-      value: Value
+      value: "Value"
     refund:
       cannot_refund: "This payment cannot be refunded."
       error: "Oops. There was an error while requesting your refund."
@@ -152,13 +166,13 @@ en:
   credits_mailer:
     request_refund_from:
       subject: "Refund request by %{name}"
-      subject_html: "User %{name} requested refund for the back %{backer_key} to the project %{backer_project} in the amount of %{backer_value} made by %{backer_payment_service} gateway."
+      subject_html: "User %{name} requested refund for the back %{backer_key} to the gathering %{backer_project} in the amount of %{backer_value} made by %{backer_payment_service} gateway."
   curated_pages:
     index:
-      title: "Curated pages"
+      title: "Channels"
     show:
-      backed: backed
-      reached: reached
+      backed: "invested"
+      reached: "reached"
   devise:
     confirmations:
       confirmed: "Your account was successfully confirmed. You are now signed in."
@@ -167,7 +181,7 @@ en:
     failure:
       already_authenticated: "You are already signed in."
       inactive: "Your account was not activated yet."
-      invalid: "Invalid email or password."
+      invalid: "Uups! Invalid email or password."
       invalid_token: "Invalid authentication token."
       locked: "Your account is locked."
       timeout: "Your session expired, please sign in again to continue."
@@ -205,18 +219,20 @@ en:
     sessions:
       new:
         site_title: "Sign in"
+        subtitle: "Enter without knock"
         submit: "Sign in"
         title: "Sign in using your email"
-        login_title: Login
-        login_subtitle: "If already have an account"
-        register_title: "Sign Up"
-        register_subtitle: "Use your e-mail account"
-        with_facebook: "Sign in with your facebook account"
-        with_facebook_subtitle: "A quick way to access"
+        social: "with social network account"
+        login_title: "without social network account"
+        login_subtitle: "If already have an Nos.vc account"
+        register_title: "Sign up"
+        register_subtitle: "Create a Nos.vc account using the old and traditional way."
+        with_facebook: "It is easier and faster."
+        with_facebook_subtitle: "We never post nothing on your wall."
         with_another_social: "Don't have facebook account?"
         with_another_social_subtitle: "Sign in with another social network"
-      signed_in: "Signed in successfully."
-      signed_out: "Signed out successfully."
+      signed_in: "Signed in successfully. Welcome! The house is yours!"
+      signed_out: "Signed out successfully. We catch up soon."
     unlocks:
       send_instructions: "You will receive an email with instructions about how to unlock your account in a few minutes."
       send_paranoid_instructions: "If your account exists, you will receive an email with instructions about how to unlock it in a few minutes."
@@ -224,83 +240,94 @@ en:
   error: "Ooops! There was an error. Please try again."
   explore:
     index:
-      categories: Categories
-      expiring: "Final countdown"
-      quick_explore: "Quick search"
-      recent: Recent
-      recommended: Recommended
-      subtitle: "Explore the projects, find the ones that touch you, and make them happen!"
-      successful: Successful
-      title: "Discover amazing projects"
-    title: "Explore the projects"
+      categories: "Cities"
+      expiring: "Last call"
+      quick_explore: "Explore"
+      recent: "Newest"
+      recommended: "Highlights"
+      subtitle: "<span>Learn</span> something new. Sign in for a gathering in  <span>your city</span>:"
+      successful: "Confirmed"
+      title: "Explore inspiring gatherings"
+    title: "Explore gatherings"
     project:
-      empty: "Hey, we didn't find any project with the text you searched. Wanna try some new words? =D"
+      empty: "Really sorry, we have not found any gathering with the text that you have searched. Wanna try some new words? =D"
   formtastic:
     hints:
       backer:
         credits: "You have <strong>%{credits}</strong> in credits and can back with up to this amount without needing to make a new payment."
-        value: "You chose the amount ;) starting with R$10, any amount is great."
+        value: "You chose the amount ;) starting with €10, any amount is great."
       project:
-        about: "Tell us a little about what you want to do, how much you need and what for. Be brief and punctual, but don't forget to give the readers something that moves them. After all, it's your creation and they need to see your passion taking place!"
-        category: "Choose in which category you want your project to appear. Don't worry if you think it fits in more than one. Choose the one where you want people to find your project."
-        expires_at: "Finally, choose how long you want your campaign to last. Again, this is a strategic choice: if you put a lot of time, people will lose interest along the way; if put too little, you may not reach the minimum in time."
-        goal: "Think hard about the amount you will ask for. It should be the <strong>minimum necessary for the project to happen</strong>. Nothing more, nothing less. If you ask too much, your chances of reaching the minimum will be lower; if you don't ask for enough, you won't be able to execute the project and consequently will have your reputation damaged, hindering future achievements."
-        headline: "Summarize your project in 140 characters. This sentence will be the first contact people will have with your project, before even seeing the video. Be creative, clear and direct :)"
-        name: "What's the name of your project? Choose with care, because this will influence the chances of your project reaching the goal."
-        video_url: "Paste the URL from a <a href=\"http://vimeo.com\" target=\"_blank\">Vimeo</a> video. We chose Vimeo because it looks better and doesn't have ads. This way, your project will look better too! <strong>Produce your video the best you can and make a video specifically for your campaign</strong>. If there is a single thing that differentiates the projects that reach the goal from the others is the video. Observe ;)"
-        when_short: ~
-        when_long: ~
-        location: ~
+        about: "Cool! Time to sell your fish! Why do I should sign in? How the gathering gonna be? What is the schedule? Who should definitely join? Is there any requirements? Open your heart, be honest and show the value of your event."
+        category: "Choose the city where your gathering will take place."
+        expires_at: "Choose until when the registration is open. Remember it has to be enough time to promote and meet the right audience. And also time enough to cancel and notify people in case the gathering does not reach the minimum attendance. Therefore, we suggest to close the registration at least one week before the gathering."
+        goal: "Really. How many people is really necessary to make this gathering possible? The event will only be confirmed if it reaches this number."
+        headline: "Max 140 characters, straight, clear, and inviting. Do not repeat the title, this text goes as a subtitle of your event."
+        name: "Awesome title that will make everyone fall in love (jokes are allowed)"
+        video_url: 'Paste here a video from Vimeo. Inspire and connect with people via a magical video.'
+        when_short: "Dates, sample: '02 to 04/01/12'"
+        when_long: "Describe precisely the date(s) of your gathering, with starting and ending time: 'Monday, 2nd January 2012. From 9:00 to 17:00')"
+        location: "Local, address, city and country"
+        image_url: "Paste here the link of an amazing image that illustrate your gathering. We recommend big pictures (1200 px of width). Use Creative commons (or pictures that you have the rights)."
+        leader_id: "Id number of the leader of this gathering. For example: 'X'. If the profile page of the person is http://nosvc.eu/en/users/X"
+        leader_bio: "Tell a bit about who gonna lead this gathering, the experience and passions related to the topic. Be short and warm."
+        maximum_backers: "Define a real maximum number of attendants. When this number is reached, the registrations are closed."
       reward:
-        description: "Describe your reward in a way that arouses people's interest to back the project. Don't be shy!"
-        maximum_backers: "If your reward is limited, tell us the maximum backers."
-        minimum_value: "This is the minimum amount to choose this reward."
-        expires_at: ~
+        description: "Describe the type of registration, make it clear and appealing."
+        maximum_backers: "If this registration type is limited, define the maximum number."
+        minimum_value: "It can be 0€ for free admissions or starting with 10€."
+        expires_at: "Is there a deadline for this kind of registration? Until when?"
+        private: "Only accessible for people with the link."
+      dynamic_field:
+        input_name: "Make your questions. The answers will be sent some days after the closing of the registrations."
     labels:
       backer:
-        anonymous: "I want my back to be anonymous."
-        credits: "I want to use my credits on this back."
-        reward: "Select your reward"
-        value: "With how much do you want to back?"
+        anonymous: "I want register anonymously."
+        credits: "I want to use my credits to register."
+        reward: "Choose your type of registration:"
+        value: "How much do you want to pay?"
       comment:
-        comment: "Leave your comment about this project"
+        comment: "Comments?"
       project:
-        about: "About your project"
-        expires_at: "What's the deadline to reach your goal?"
-        goal: "How much do you need?"
-        name: "Name your project"
-        video_url: Video
-        when_short: ~
-        when_long: ~
-        location: ~
+        expires_at: "When the registration end?"
+        goal: "What is the minimum number of attendants?"
+        video_url: "Video:"
+        when_short: "Date(s)"
+        when_long: "Date(s) with starting and ending time"
+        location: "Where?"
+        about: "About the gathering"
+        maximum_backers: "What is the maximum number of attendants?"
       reward:
-        maximum_backers: "Maximum backers (optional)"
-        expires_at: ~
+        maximum_backers: "What is the maximum number for this type of registration? (optional)"
+        expires_at: "When does this kind of registration end? (optional)"
+        private: "Secret Registration"
     optional: " (optional)"
   found_plural: Found
   found_singular: Found
   here: here
-  i_backed: "I backed the project %{name} on @Catarse_"
-  i_just_backed: "I just backed the project %{name} on @Catarse_"
+  i_backed: "I joined %{name} on @Nos_vc"
+  i_just_backed: "I just joined %{name} on @Nos_vc"
   layouts:
     application:
       notifications:
-        new_curated_pages: "Now we have cathartic channels, <a href='#curated_pages' id='curated_link'>check out</a>!"
+        new_curated_pages: "Do you know our friends already? <a href='#curated_pages' id='curated_link'>check out</a>!"
     login:
-      login_with_facebook: "sign in with your facebook account"
-      remember_me: "Remember me and keep me connected."
+      login_with_facebook: "sign in with your Facebook account"
+      remember_me: "Remember me and keep me online."
     header:
-      signup: "sign up"
-      signin: login
-      explore: explore
-      submit_project: submit
-      how_works: ~
-      profile: "my profile"
-      hello: ~
-      account: "my account"
+      signup: "Sign up"
+      signin: "Sign in"
+      explore: "Explore"
+      submit_project: "Create a gathering"
+      how_works: "How it works"
+      profile: "My profile"
+      hello: "What's up?"
+      account: "My account"
+    recommended_header:
+      sugest_for_you: "suggested for you"
+      highlight_project: "highlighted gatherings"
     user:
-      logout: Logout
-      my_credits: "My credit"
+      logout: Log out
+      my_credits: "My credits"
   not_informed: "not informed"
   notify_locale: "We identified your language by your browser. If you prefer another one, click on one of the flags on the right."
   on_the_spot:
@@ -323,40 +350,40 @@ en:
       site_title: "Recover password"
   payment_stream:
     thank_you:
-      error: "Ooops. You can only access this page after backing a project."
-      header_subtitle: "Without you maybe this project wouldn't stand a chance. Welcome to the team!"
-      header_title: "Thank you! :D"
-      text_subtitle: "Tell everyone what you just did"
-      text_title_html: "You are now part of the group that does everything to make %{link} happen."
-      title: "Thank you"
+      error: "Ooops. You can only access this page after joining a gathering."
+      header_subtitle: "Without you maybe this gathering would not happen. You are bringing it a live and will receive a confirmation via e-mail. If you have any question, do not hesitate in contact us"
+      header_title: "Thank you :D"
+      text_subtitle: "Spread the word"
+      text_title_html: "is %{link} confirmed?"
+      title: "Thank you!"
   project:
     start:
-      email_subject: "Your project has been received by Catarse's team"
-      email_text: "Thanks for trusting your project to Catarse :)<br><br>We know that you expect a quick reply but, to be quite frank, we take up to 4 days to resnpond, ok? That is because we have a small team working on several projects. Note that the reply can come sooner, so keep atention to your inbox.<br><br>Meanwhile it is worth to get to know the projects that are online (<a href='%{explore_link}' style='color: #E75297 !important;'>%{explore_link}</a>) and - if you like any of them- back it! This is the way to show support for the crowdfunding culture in Brazil and to feed the ecosystem that keeps growing around Catarse.<br><br>Besides that, you will get some inspiration for your own project...<br><br>Stay tuned for updates in <a href='%{facebook}' style='color: #E75297 !important;'>Facebook</a> and get some deeper knowledge about Catarse reading the posts in our <a href='%{blog}' style='color: #E75297 !important;'>blog</a>.<br><br>If you have any doubt, send an email to: %{email}"
-      notification_text: "Your project has been received by Catarse's team"
+      email_subject: "Yeah! We receive your proposal!"
+      email_text: "Hi! I am a Nos.vc's robot and I will help you to make this gathering happen. <br><br>But before, a real person must read what you have written, and it has not happened yet.<br><br> It can take few days. Maybe it will be really fast.<br><br> It depends on the quantity of people creating gatherings right now.<br><br> If everything is ok, your gathering will go live ASAP!<br><br> Meanwhile, you can see what is going on in the Nos.vc(<a href='%{explore_link}' style='color: #1aa79c !important;'>%{explore_link}</a>)<br><br>Read our blog, o <a href='%{blog}' style='color: #1aa79c !important;'>Ponto de Encontro</a>, full of hot hints.<br><br>And, like <a href='%{facebook}' style='color: #1aa79c !important;'>facebook</a> and follow un on <a href='%{twitter}' style='color: #1aa79c !important;'>twitter</a>.<br><br>Any issue, you can talk to me. I am a machine, but I can surprise you answering your questions."
+      notification_text: "Yeah! We receive your proposal!"
     finish:
       successful:
-        email_subject: "Hooray! The project you backed was successful on Catarse!"
-        email_text: "The project %{project_link}, which you backed, was successfuly funded on Catarse! Time to celebrate :D<br><br>Thank you very much, from the heart, for your support! Without you this would never have been possible. Soon, %{user_link} will contact you to deliver your reward. Meanwhile, share with everybody this success!"
-        facebook_text: "Hooray! The project '%{name}', which I backed, was successful on Catarse!"
-        notification_text: "Hooray! The project %{link} that you backed was successful! Spread the word!"
-        reward_notification_text: "Soon, %{link} will contact you to deliver your reward. Enjoy!"
-        twitter_text: "Hooray! The project '%{name}', which I backed, was successful on @Catarse_! %{short_url}"
+        email_subject: "Yeah! Your gathering is confirmed!"
+        email_text: "%{project_link} has reached the minimum number of attendants and is confirmed! <br><br>Thanks a lot for bringing this gathering to life. You made it happen!<br><br>All further information will be sent by %{user_link}. Now share with the world and I am really looking forward to hear from you!"
+        facebook_text: "Awesome!'%{name}' is confirmed on Nós.vc. I am joining!"
+        notification_text: "Yeah! The gathering %{link} is confirmed! Spread the word!"
+        reward_notification_text: "All further information will be sent by %{link}. Have a nice time!"
+        twitter_text: "Yeah! '%{name}' is confirmed on @Nos_vc. I am joining! %{short_url}"
       unsuccessful:
-        email_subject: "The project you backed wasn't funded on Catarse."
-        email_text: "The project %{project_link}, that you backed, was not funded. Maybe next time!<br><br>Because of this, you received <strong>%{value}</strong> in credits to back other projects. If you prefer, you can ask for a refund %{credits_link}."
-        notification_text: "You received %{value} in credits to back other projects. If you prefer, you can request a refund %{link}."
-        unsuccessful_text: "The project %{link} that you backed wasn't funded. Maybe next time!"
+        email_subject: "The gathering that you have registered will not happen :-("
+        email_text: "%{project_link} did not reach the minimum number of attendants and will not take place now. Maybe in another time :-)? <br><br>Therefore, you have received <strong>%{value}</strong> credits and you can join another gathering. If you prefer, you can receive your money back %{credits_link}."
+        notification_text: "You have received  %{value} in credits to join another gathering. If you prefer, you can receive your money back %{link}."
+        unsuccessful_text: "%{link}, em que você se inscreveu, não será realizado. Quem sabe numa próxima vez?"
     verify_if_video_exists_on_vimeo: "must exist on Vimeo"
-    vimeo_regex_validation: "only Vimeo URLs are allowed"
+    vimeo_regex_validation: "only Vimeo's URL is accepted"
     display_status:
-      expired: "not funded"
-      successful: funded
-      waiting_confirmation: waiting
+      expired: "Not successful"
+      successful: "Confirmed"
+      waiting_confirmation: "Waiting"
   projects:
     recommended_header:
       sugest_for_you: "suggested for you"
-      highlight_project: "featured project"
+      highlight_project: "highlighted gatherings"
     box:
       by: by
     admin_fields:
@@ -364,205 +391,257 @@ en:
     back_project:
       project_warning:
         not_successful:
-          expired: "This project didn't reach the goal of %{goal} until %{date} and wasn't funded"
-          not_expired: "This project will only be funded if at least %{goal} is backed until %{date}"
+          expired: "No. This gathering did not take place because it did not reach the minimum number of attendants till  %{date}. But it is still possible to redesign the proposal and create a new one! Interested? Contact %{name}. If you have registered, you can get your money back. Or good karma if the gathering was for free."
+          not_expired: "Not yet! This gathering needs you! It will just happened if it reaches the minimum number of attendants till  %{date}. If does not reach the minimum number, you will receive your money back. Or good karma if the gathering was for free."
         successful:
-          expired: "This project was successful and was funded on %{date}"
-          not_expired: "This project will be successful and funded on %{date}"
-        waiting_confirmation: "Waiting confirmation from payments to know if this project will be funded."
+          expired: "Yes! This gathering reached the minimum number of attendants and it is confirmed! However the registration is closed. Did not you get in? Contact %{name} and organise a new gathering."
+          not_expired: "Yes! This gathering reached the minimum number of attendants and it is confirmed! The registration is open until %{date} or until the places are over. The community has singed up and brought this gathering to life."
+        waiting_confirmation: "Maybe! The registration is over and the last payments are being processed. This gathering will be confirmed if it reaches the minimum number of attendants. Come back later."
       reached_of: "Reached of"
-      submit: "Back this project"
+      submit: "Register"
+      and_make_it_happen: "and make it happen"
     backer:
-      anonymous_backer: "Anonymous backer"
-      anonymous_description: "Opted to remain incognito"
-      no_reward: "This backer has not picked a reward"
+      anonymous_backer: "Anonymus"
+      anonymous_description: "has chose to register anonymously"
+      no_reward: "Free registration."
     backers:
       checkout:
-        no_credits: "You don't have enough credits to back this project."
-        success: "Your back was successfully made. Thanks a lot!"
+        moip_error: "Ooops. There was a problem to send you payment via MoIP. Please, try again."
+        no_credits: "You don't have enough credits to register."
+        paypal_cancel: "Your payment via PayPal has been canceled. Please, try again."
+        paypal_description: "%{value} for the registration for the gathering %{project_name}"
+        paypal_error: "Ooops. There was a problem to send you payment via PayPal. Please, try again."
+        success: "You have registered successfully. Thank you!"
       new:
-        cannot_back: "It's not possible to back this project right now. Please, back other projects."
+        cannot_back: "It is not possible to register in this gathering right now. Please, do not give up and try later."
         header:
-          subtitle: "You are a few steps from making the difference and becoming part of this project."
-          title: "Oohh yeah!"
-        no_reward: "Thanks. I just want to help the project."
-        submit: "Review and proceed to checkout"
-        title: "Back %{name}"
+          title: "Thank you! You are really close to make this gathering happen."
+        no_reward: "Thank you. I just want to help the gathering."
+        submit: "submit"
+        and_make_it_happen: "and make it happen"
+        title: "Join %{name}"
+        good_question: "Good question!"
       review:
-        credits_notice_html: "This back will be payed with your credits. After the confirmation, you will have <strong>%{credits}</strong> in credits to back other projects."
-        error: "Ooops. There was an error while registering your back. Please try again."
+        credits_notice_html: "This registration will be paid with your credits. After confirmation, you will have <strong>%{credits}</strong> as remain credits to join other gatherings."
+        error: "Ooops. There was a problem in your registration. Keep calm and try again."
         international:
-          description: "You can use PayPal to make international payments"
-          important_html: "<p>The use of PayPal is destinated mostly for international payments. That's because you'll have only 60 days to receive an eventual refund without paying any fee.</p><p>In case you can make the regular payment through MoIP, we recommend you to do it.</p><p>But if that's not possible, don't worry: you'll always be able to receive your money back. Only, in case your refund is made more than 60 days after your payment, you'll have to pay PayPal's fee, which is 5,4% + R$0,60 per transaction.</p>"
-          submit: "Proceed to PayPal's checkout"
-          title: "Want to make an international payment?"
-        review_with_reward_html: "You will back with <strong>%{value}</strong> and receive the following reward:"
-        review_without_reward_html: "You will back with <strong>%{value}</strong> but you don't want any reward for that."
+          description: "You can also use PayPal to register from abroad"
+          important_html: "<p>If you use Paypal to pay, you can request refund (without fees) until 60 days after the payment.</p><p>If you request it after the 60 days deadline, you have to pay the Paypal fee: 5,4% + 0.60€ per transaction.</p>"
+          submit: "Pay with PayPal"
+          title: "Do you want to pay from abroad?"
         submit:
-          credits: "Confirm backing with credits"
-          moip: "Proceed to MoIP's checkout"
-        subtitle: "This is the last step to make the difference and become part of this project."
-        title: "Fill in and review your data"
-        choose_free: ~
-        confirm_free: ~
+          credits: "Confirm registration with credits"
+          moip: "Pay with MoIP"
+        subtitle: "Your data"
+        title: "Fill and review your registration"
         choose_payment: "How do you want to pay?"
-        choose_payment_subtitle: "Select below a payment method"
-        choose_credit_card: "Credit Card"
-        choose_boleto: "Billet Banking"
-        you_are_about_html: "You are about to become part of the group that does everything to make %{link} happen."
-        pay_with: "Pay With"
+        choose_free: "Confirm registration?"
+        confirm_free: "Confirm"
+        confirm_free_hind: "And conclude!"
+        confirm_payment: "Confirm"
+        confirm_payment_hind: "and pay!"
+        you_are_about_html: "<span>Almost there!</span> Please, fill correctly and review your <span>registration.</span>"
     create:
-      success: "Your project was successfully created! We'll soon contact you. Thanks a lot!"
+      success: "Your gathering was successfully created! We will contact you soon! Thanks a lot, you rock!"
     form:
-      add_reward: "Add reward"
-      important_html: "Please notice that Catarse will charge 7.5% if your project is successful, and our payment gateways (MoIP and Paypal) charge a fee that varies, usually, from 4% to 5% per transaction. Add this values to your budget in order to execute your project with no surprises."
-      project_warning:
-        content_html: "Want to have your project selected? Don't forget to read %{link}."
-        help_link: "our guide"
-      rewards_description: "We believe that the best way to inspire people to back a project is offering excelent – and creative! – rewards. Everybody loves limited editions, unique things and joyfull experiences (parties, candies, balloon traveling!). Spend some time devising creative rewards and people will be interested."
-      rewards_title: Rewards
-      submit: "Submit project"
+      add_reward: "Add type of registration"
+      important_html: "Do not forget: 10% of the registrations of confirmed gatherings go to the Nos.vc + 1.9% to 7.4% to the payment service. There is no fee for free registrations. Usually, you get 80% of the total revenue."
+      rewards_description: "You can create as much registration types you want. They can have different prices and deadlines."
+      rewards_title: "Registrations"
+      submit: "Submit"
+      submit_complement: "and make it happen!"
+      has_dynamic_fields: "Add a question in the registration (optional)."
+      add_dynamic_field: "Add a question"
     index_header:
-      subtitle_html: "Fund projects collaboratively and become part of something bigger.<br/>Promote a collective catharsis! You're the missing part in this story."
-      title: "Make the projects you believe in happen"
+      subtitle_html: "Financie projetos de maneira colaborativa e torne-se parte de algo maior.<br/>Promova uma catarse coletiva! Você é a peça que falta nesta história."
+      title: "Faça acontecer os projetos em que você acredita"
     new:
-      subtitle: "The time to make it happen is now! We really want to know what you're up to..."
-      title: "Submit your project"
+      title: "Now it is for real! <span>Build up</span> the page of your <span>gathering</span>."
+      sidebar:
+        title: "How to make your gathering happen:"
+        first_step: "Define how many types of registration you want. They can have different prices and deadlines."
+        second_step: "Create appealing registration alternatives to reach faster the minimum number."
+        third_step: "But, remember, the calculation must close! Take all costs in consideration."
+        fourth_step: "Do you already know the tips from our community?"
+        link: "Find out more in our help!"
+    footer_featured:
+      mi_casa_su_casa:
+        title: "Mi casa, su casa."
+        text: "Open your house, bar, coworking space,living room or treehouse to receive inspiring gatherings."
+        link: "Locations"
+      not_repress:
+        title: "Do not hesitate!"
+        text: "Once a month, maybe, we will bring you some news to our friends. If you are a friend, please, come over:"
+      it_will:
+        title: "Everything will happen..."
+        text: "at the Meeting Point. In our blog you can find news, hints and ideas that inspire us."
+        link: "I want to read!"
     pending:
-      can_finish: "Can finish?"
+      can_finish: "Finish?"
       finished: Finished?
       home_page: "Home page?"
       id: Id
       name: Name
-      no_projects: "No projects found."
+      no_projects: "No Gathering Found."
       order: Order
-      project: Project
+      project: Gatherings
       slug: Slug
       recommended: Recommended?
       rejected: Rejected?
       submit: Search
-      title: "Project management"
+      title: "Gathering manager"
       user: User
       visible: Visible?
     pending_backers:
-      anonymous: Anonymous?
+      anonymous: Anonymus?
       confirmed: Confirmed?
-      credits: "Used credits?"
+      credits: "with credits?"
       id: Id
       key: Key
-      no_backers: "No backers found."
-      project: Project
-      refunded: Refunded?
-      requested_refund: "Requested refund?"
-      reward: Reward
+      no_backers: "No registration found."
+      project: Gathering
+      refunded: "Refunded?"
+      requested_refund: "Refund requested?"
+      reward: "Registration"
       submit: Search
-      title: "Backers management"
-      total_backed: backed
-      total_backers: backers
-      total_backs: backs
+      title: "Registration manager"
+      total_backed: revenue
+      total_backers: attendants
+      total_backs: registrations
       total_users: users
       user: User
       value: Value
+      total_paid: "Total paid"
     project:
-      backed: backed
+      backed: raised
       reached: reached
+      missing_participants: "It is needed <span>%{count}</span> to happen"
+      open: "Registrations open"
+      closed: "Registration closed"
     project_backers:
-      empty: "Nobody backed this project so far. How about being the first one?"
+      empty: "No one has joined yet! You can be the pioneer and bring this gathering to life."
     project_comments:
-      require_login_html: "Want to send a comment? %{link} to login."
-      submit: "Send comment"
+      require_login_html: "Do you want to send a comment? %{link} to log in."
+      submit: "Enviar comentário"
     project_header:
-      subtitle_html: "A project by %{link}"
-      without_city: "A project in %{category_name}, by %{author}"
-      with_city: "A project in %{category_name}, in %{city}, by %{author}"
+      subtitle_html: "Um encontro de %{link}"
+      without_city: "A gathering on %{category_name} by %{author}"
+      with_city: "A gathering %{category_name} by %{author} in %{city}"
     project_updates:
-      empty: "This project didn't have updates yet. But wait and see =D"
-      submit: "Send update"
+      empty: "This gathering has no updates yet. The news will arrive here. If you are registered, you will get it via e-mail"
+      submit: "Submit update"
       comment: "Update text"
-      title: "Title of the update"
+      title: "Update title"
       destroy: "Remove update"
-      destroy_confirmation: "Do you want to remove the update?"
+      destroy_confirmation: "Do you want delete this update?"
+    project_warning:
+      rejected: "I am really sorry, but this proposal has not been selected to join the Nos.vc. Maybe next time?"
+      waiting: "We are reviewing this gathering. Soon you will know if it will be accepted."
     rewards:
-      reward_title: "For %{minimum} or more"
-      title: "Back and receive..."
+      reward_title: "%{minimum}"
+      title: "Registrations"
     send_mail:
-      success: "Your project was successfully sent! We'll soon contact you. Thanks a lot!"
+      success: "Your proposal has been sent successfully. We gonna contact you soon! Thanks a lot!"
     show:
-      where: ~
-      when: ~
-      total_backers: ~
-      total_remaining: ~
-      unlimited_vacancies: ~
-      about_title: "About this project"
-      private_rewards_title: "Inscrições 'escondidas'"
+      rejected: "I am really sorry, but this proposal has not been selected to join the Nos.vc. Maybe next time?"
+      waiting: "We are reviewing this gathering. Soon you will know if it will be accepted."
+      where: "Where?"
+      when: "When?"
+      is_confirmed: "Confirmed?"
+      how_much: "How much?"
+      total_backers: "Attendants"
+      total_remaining: "Places left"
+      unlimited_vacancies: "Unlimited places"
+      about_title: "About this gathering"
+      private_rewards_title: "Secret registration:"
       menu:
-        about: About
-        backers: Backers
-        comments: Comments
+        about: "About"
+        backers: "Who is joining?"
+        comments: "Suggest, ask, and collaborate to improve this gathering:"
         updates: Updates
       share:
-        embed: embed
-        embed_title: "Embed this project on your site"
+        embed: "embed"
+        embed_title: "embed in your website"
         link: Link
         link_title: "Share the link"
-        take_a_look: "Check out the project"
-        title: "Be part of it and share this project"
+        take_a_look: "Take a look"
+        title: "Join and share this gathering"
     start:
-      about: "Describe your project and how much do you need"
-      category: "Project category"
-      how_much_you_need: "How much do you want to raise?"
-      about_hint: "Tell us a little about what you want to do, how much you need and what for. Be brief and punctual, but don't forget to give the readers something that moves them. After all, it's your creation and they need to see your passion taking place!"
-      contact: "Leave us your email address so we can contact you"
-      links: "Where can we find more about you and your project?"
-      links_hint: "Leave us as many links as you have, so we can get to know your work and your project better. Doesn't have to be something formal or fancy, just a few useful links."
-      video: "Your project already have a video?"
-      video_hint: "A vimeo link"
-      twitter: "Have twitter account?"
-      facebook: "Have facebook account?"
-      blog: "Have a blog about the project?"
-      know_us_via: "How did you meet Catarse?"
-      how_works: "How to mobilize backers to raise $ needed for enforcement?"
-      project_warning:
-        content_html: "Want to have your project selected? Don't forget to read %{link}."
-        help_link: "our guide"
-      rewards: "What rewards do you want to offer?"
-      rewards_hint: "We believe that the best way to inspire people to back a project is offering excelent – and creative! – rewards. Everybody loves limited editions, unique things and joyfull experiences (parties, candies, balloon traveling!). Spend some time devising creative rewards and people will be interested."
-      submit: "Submit the project"
-      subtitle: "The time to make it happen is now! We really want to know what you're up to..."
-      title: "Submit your project"
+      the_meeting: "The event"
+      name: "What is the title?"
+      name_hint: "Awesome title that will make everyone fall in love (jokes are allowed)"
+      about: "What the people will learn?"
+      about_hint: "Cool! Time to sell your fish! Why do I should sign in? How the gathering gonna be? What is the schedule? Who should definitely join? Is there any requirements? Open your heart, be honest and show the value of your event."
+      when: "When?"
+      when_hint: "Date(s) and starting and ending time."
+      where: "Where?"
+      where_hint: "Local, address, city and country."
+      video: "Do you have video already?"
+      video_hint: "If yes, please, what is the link. If not, no worries you can send it after."
+
+      the_people: "People"
+      leader_name: "What is the name of the gathering leader?"
+      leader_name_hint: "Name of the facilitator, teacher, host, entertainer, whatever you call it. It can be you or not."
+      more_info: "Where can you find more info about you and about him or her?"
+      more_info_hint: "Site(s), twitter(s), facebook(s) and etc(s). Everything that can give us a clue about the stars behind the show."
+
+      the_registrations: "Registration"
+      goal: "What is the minimum number of attendants?"
+      goal_hint: "Really. How many people is really necessary to make this gathering possible? The event will only be confirmed if it reaches this number."
+      maximum_backers:  "What is the maximum number of attendants?"
+      maximum_backers_hint: "Define a real maximum number of attendants. When this number is reached, the registrations are closed."
+      how_works: "How will the registrations be?"
+      how_works_hint: "Which are the possible ways to register? How much do they will cost? Are they for free?"
+
+      the_contact: "Contact"
+      contact: "What is your e-mail?"
+      contact_hint: "The one that you read, answer. We gonna use this one to reach you."
+      know_us_via: "Have you talked with some one from the Nos.vc about your proposal? Who?"
+      know_us_via_hint: "Welcome! Who made you come to us?"
+
+      submit: "Submit"
+      submit_complement: "Ready, fire!"
+      title: "Share your <span>passion</span> and <br /><span>get together</span> with other passionate people."
+      sidebar:
+        title: "How to create and organise a gathering about anything you want:"
+        first_step: "Fill the form with class and love. Create a course, workshop, debate, talk or anything that fits to what you want to share."
+        second_step: "We will read your proposal and answer carefully (with a bad english, probably). When it is all fine, the registration will be open."
+        third_step: "The event will be organised by you in the real world. If it reaches the minimum number of registration in the defined deadline."
+        fourth_step: "Do you want some hints to make your inspiring gathering happen?"
+        link: "We have tons of it."
     twitter:
-      take_a_look: "Check out the project %{name} on @Catarse_"
+      take_a_look: "%{name} via @Nos_vc"
     video_embed:
-      a_project_by_html: "A project by %{link} on Catarse"
+      a_project_by_html: "Um encontro de %{link} no"
   projects_mailer:
     start_project_email:
-      subject: "Project sent by %{name}"
-      subject_html: "Project sent by %{link}"
+      subject: "Nos.vc | New gathering sent by %{name}"
+      subject_html: "Gathering sent by %{link}"
   registrations:
     new:
-      site_title: "Sign up"
-      submit: "Sign Up"
-      title: "Sign up using you email"
-  remaining_plural: left
-  remaining_singular: left
+      site_title: Register
+      submit: "Register"
+      title: "Create an account using my e-mail"
+  remaining_plural: remaining
+  remaining_singular: remaining
   remove: remove
-  require_admin: "You must be admin to perform this action."
-  require_login: "You must be logged in to perform this action."
-  require_permission: "You don't have permission to perform this action."
+  require_admin: "You need to be admin."
+  require_login: "You need to login first."
+  require_permission: "Sorry, you are not allowed to do it."
   reward:
-    display_remaining: "%{remaining} of %{maximum} available"
-    display_maximum_backers: ~
-    free: ~
-    limited: Limited
-    unlimited: ~
-    sold_out: "Sold out"
+    display_remaining: "<span>%{remaining}</span> remaining places"
+    display_maximum_backers: "<span>%{maximum}</span> remaining places"
+    free: "FREE"
+    limited: "limited places"
+    unlimited: "unlimited places"
+    sold_out: "soud out"
   sessions:
     auth:
-      success: "Successfully logged in. Welcome, %{name}!"
+      success: "Welcome, %{name}! "
     destroy:
-      success: "Successfully logged out. See you!"
+      success: "See you soon!"
     failure:
-      error: "There was an error while loggin in. Please try again."
+      error: "Oh damn! Something went wrong to log you in. Be brave and try again."
   site:
     host: "nos.vc"
     base_url: "http://nos.vc"
@@ -570,140 +649,161 @@ en:
     help: "http://help.nos.vc/"
     email:
       contact: somos@nos.vc
-      payments: leo@nos.vc
-      projects: barrosdaniel@gmail.com, mauroalex@gmail.com, leocorrea.leonardo@gmail.com, badjolo@gmail.com, victor@nos.vc, guilacerda@nos.vc, sharlie@nos.vc
-      system: somos@nos.vc
+      payments: mauro@nos.vc
+      projects: "mauro@nos.vc"
+      system: mauro@nos.vc
     facebook: "http://www.facebook.com/nos.vc"
     name: "Nós.vc"
-    title: "Encontros Inspiradores"
+    title: "Inspiring gatherings"
     twitter: "Nos_vc"
   static:
     faq:
-      title: "Frequent asked questions"
+      title: "F.A.Q."
     guidelines:
-      accept: "I have read and understood how Catarse works."
-      submit: "I want to submit my project"
-      subtitle: "Before submitting your project, learn a little about how Catarse works."
-      title: "How does Catarse work?"
+      accept: "I read and got how does the Nos.vc work."
+      submit: "I want to submit a gathering"
+      title: "How it works"
+      sidebar:
+        how_it_works: "How it works?"
+        who_organizes_the_meetings: "Who organise the gatherings?"
+        how_much: "How much the Nos.vc costs?"
+        why_use: "Why should I use the Nos.vc?"
+    about_us:
+      title: "About the Nos.vc"
+    contact:
+      title: "Contact"
     privacy:
       title: "Privacy Policy"
     terms:
       title: "Terms of use"
-  terms: "terms of use"
+  terms: "Terms of use"
+  guidelines: "Guidelines"
   user:
     backs_text:
-      many: "Backed this and other %{total} projects"
-      one: "Backed only this project until now"
-      two: "Backed this and 1 other project"
-    no_name: Unnamed
+      many: "Se inscreveu neste e em mais %{total} outros encontros."
+      one: "Se inscreveu somente neste encontro até agora."
+      two: "Se inscreveu neste e em mais 1 outro encontro."
+    no_name: "Nome não informado"
   users:
+    statements:
+      title: "Give a feedback and make a testimonial:"
     show:
-      attention: Attention
-      tabs:
-        backed_projects: "Backed projects"
-        created_projects: "Created projects"
-        comments: Comments
-        credits: Credits
-        settings: Settings
-    admin_fields:
-      credits: "available in credits"
-      no_email: "haven't filled the email yet"
-      title: "%{name}' info"
+      attention: "Attention"
       user_social:
-        email: "Send me an email"
-        facebook: "Profile on facebook"
-        twitter: "Profile on twiiter"
+        email: "Send me an e-mail"
+        facebook: "Facebook"
+        twitter: "Twitter"
+      tabs:
+        me_backed_projects: "I joined"
+        me_created_projects: "I created"
+        backed_projects: "have joined"
+        created_projects: "have created"
+        comments: "Reviews"
+        credits: "Credits"
+        settings: "Settings"
+    admin_fields:
+      credits: "credits available"
+      no_email: "doesn't have an e-mail yet (can you believe?)"
+      title: "Profile of %{name}"
+      user_social:
+        email: "Send me an e-mail"
+        facebook: "Facebook"
+        twitter: "Twitter"
     backs:
-      anonymous: "Anonymous back."
-      no_backs: "%{name} haven't backed any project yet. But we know it's just a matter of time! :D"
-      no_backs_current_user_html: "You haven't backed any project yet. What about <a href=\"/\">starting now</a>?"
-      no_reward: "You didn't pick a reward"
-      title: "Projects %{name} has backed"
-      title_current_user: "Projects I've backed"
-      your_reward: "Your reward"
+      anonymous: "Anonymus registration."
+      no_backs: "%{name} has not joined any gathering, yet."
+      no_backs_current_user_html: "You have not joined any gathering using the Nos.vc. What about <a href=\"/\">starting now</a>?"
+      no_reward: "You have not chosen a registration yet."
+      title: "Gatherings that  %{name} has joined"
+      title_current_user: "Gatherings that I have joined"
+      your_reward: "Your registration"
     current_user_fields:
-      updated: "Your information has been updated"
-      update_social_info: "Update info"
-      social_info: "Contact info"
-      twitter: "twitter ( username )"
-      facebook_link: "facebook profile link"
-      other_link: "another internet page"
-      change_password: "Change my password"
-      current_password_hint: "<i>We need your current password to confirm your changes.</i>"
-      email_hint: "Your email will only be used for communications from Catarse and from the projects you back. It won't be visible in your profile. When you back a project, we will give your email to the project owner so he can provide your rewards."
-      email_tooltip: "Click here to fill your email..."
-      gravatar_hint_html: "Want to change your picture? Use %{link} with your email. It's as simple as uploading an image and works for other sites as well ;)"
-      my_data: "My profile"
-      newsletter: "I want to receive news from Catarse via email"
-      password_hint: "<i>Leave blank if you don't want to change it.</i>"
+      updated: "Your settings have been updated."
+      update_social_info: "Update"
+      social_info: "Contacts"
+      twitter: "Your twitter login"
+      facebook_link: "Facebook profile"
+      other_link: "link to your website"
+      change_password: "Password"
+      current_password_hint: "<i>To change your password, you have to confirm your current password.</i>"
+      email_hint: "Your e-mail address is not public. But you will receive e-mails from the gathering organisers that you have joined or news from the Nos.vc."
+      email_tooltip: "Click here to write your e-mail..."
+      gravatar_hint_html: "Do you want to change your picture? Use the %{link} of your e-mail. It is as simple as send an image and work for other sites as well."
+      my_data: "E-mail"
+      newsletter: "I want to receive news from Nos.vc by e-mail. (Spam never!)"
+      password_hint: "<i>Leave it blank if you do not want to change your password.</i>"
     header:
-      bio_tooltip: "Click here to write about you..."
-      name_tooltip: "Click here to fill your name..."
+      bio_tooltip: "What you would like to learn and share?"
+      name_tooltip: "What is your name?"
     projects:
-      no_projects: "%{name} haven't started any project on Catarse yet. We wonder if inspiration will hit one of these days!"
-      no_projects_current_user_html: "You haven't submitted any project to Catarse yet. Let the inspiration flow and %{link} to start!"
-      title: "%{name}'s projects"
-      title_current_user: "My projects"
+      no_projects: "%{name} has not created any gathering on Nos.vca, yet."
+      no_projects_current_user_html: "You have not created any gathering using the Nos.vc. Share your passion and find other passionate people as you: %{link}"
+      title: "Gatherings by %{name}"
+      title_current_user: "My gatherings"
   users_mailer:
     notification_email:
-      alt: "You must enable images in order to correctly view this message."
-      forward: "Foward to your friends"
-      hello: Hi
-      intro: "You are receiving this message because you signed up on Catarse"
-      mailee: "Message delivered by Mailee.me"
-      salutation: "Big hugs,"
-      signature: "Catarse's Team"
-      unsubscribe: Unsubscribe
-      unsubscribe_long: "If you don't want to receive these emails"
-      weblink: "View on the web"
+      alt: "You have to allow images to visualise this message correctly."
+      forward: "Forward"
+      hello: "Hello"
+      intro: "You are receiving this message because you have registered at the Nos.vc"
+      mailee: "delivered by Mailee.me"
+      salutation: "Hi-five,"
+      signature: "Nós.vc"
+      unsubscribe: "Unsubscribe"
+      unsubscribe_long: "If you do not want to receive more e-mails like this"
+      weblink: "web version"
       whitelist: "Add contact"
-      whitelist_long: "Add our email to your contacts"
+      whitelist_long: "Add our mail to your contact list"
   notifications:
     backers:
       to_backer:
-        subject: "Obrigado! Sua inscrição para %{project} foi confirmada!"
-        text: "Sucesso! <br />Sua inscrição acabou de ser confirmada.<br /><br />Confira: %{backer_name}<br />%{backer_value}<br />%{reward}<br /><br /><a href='%{project_link}'>%{project_name}</a><br />%{city} <br />%{date}<br /><br /> <h3>Você já pode:</h3> - Tirar qualquer dúvida com %{user_name}: %{user_email}<br />- Divulgar o Encontro e fazer ele acontecer. <br /> - Fazer uma dancinha. &lt;o/"
+        subject: "Hi-five! Your registration to join %{project} was confirmed!"
+        text: "Awesome! <br />Your registration has just be confirmed.<br /><br />Check out: %{backer_name}<br />%{backer_value}<br />%{reward}<br /><br /><a href='%{project_link}'>%{project_name}</a><br />%{city} <br />%{date}<br /><br /> <h3>Now you can:</h3> - Ask questions and give ideas to %{user_name}: %{user_email}<br />- Share and help this gathering to happen. <br /> - Dance! &lt;o/"
       to_project_owner:
-        subject: "Presente! %{backer_name} se inscreveu no seu encontro!"
-        text: "Sucesso! <br />Uma inscrição acabou de ser confirmada.<br /><br />Confira: <br />%{backer_name}<br />%{backer_email}<br />%{backer_value}<br />%{reward}<br /><br /> <h3>Você já pode:</h3> - Dar as boas-vindas.<br />- Criar um grupo no facebook.<br />- Convidar pra ajudar na divulgação.<br />- Descobrir o que o inscrito espera do Encontro.<br />- Dar uma checada nos comentários: <a href='%{project_link}'>%{project_name}</a><br />- Fazer uma dancinha. &lt;o/"
+        subject: "Guess what?! %{backer_name} has joined your gathering!"
+        text: "Great! <br />A registration to your gathering has just been confirmed. <br /><br />Confira: <br />%{backer_name}<br />%{backer_email}<br />%{backer_value}<br />%{reward}<br /><br /> <h3>Now you can:</h3> - Say \"Welcome\".<br />- Create a Facebook group.<br />- Invite him or her to help on spreading the word. <br />- Find out his or her expectations about the gathering.<br />- See the comments: <a href='%{project_link}'>%{project_name}</a><br />- Dance! &lt;o/"
     updates:
-      subject: "Se liga! Atualização de %{project_name} por %{project_owner}: %{update_title}"
-      text: "%{update_title}<br />%{update_text}<br />Comentários? Mande ver na página do Encontro: <a href='%{project_link}'>%{project_name}</a>."
-  admin:
+      subject: "Stay tuned! %{project_name} was updated by %{project_owner}: %{update_title}"
+      text: "%{update_title}<br />%{update_text}<br />Comments? Say what you think on the gathering page: <a href='%{project_link}'>%{project_name}</a>."
+  adm:
     users:
-      title: "Management backers"
-      menu: Backers
-      credits: Credits
-      credits_view: "Calculated credits"
-      id: Id
-      key: Key
-      submit: Search
-      has_credits_difference: "Discrepancy in credits"
-      total_backed: backed
-      total_backers: backers
-      total_backs: backs
-      total_users: users
-      total_credits: credits
-      total_credits_view: "calculated credits"
-      user: User
-      value: Value
+      index:
+        title: "Attendants manager"
+        menu: "Attendants"
+        credits: "Credits"
+        credits_view: "Credits overview"
+        id: Id
+        key: Key
+        submit: Search
+        has_credits_difference: Credits difference
+        total_backed: Total revenue
+        total_backers: attendants
+        total_backs: registrations
+        total_users: users
+        total_credits: credits
+        total_credits_view: credits overview
+        user: User
+        value: Value
+        payer_email: Payment email
     backers:
-      title: "Backers management"
-      menu: Backs
-      anonymous: Anonymous?
-      confirmed: Confirmed?
-      credits: "Used credits?"
-      id: Id
-      key: Key
-      no_backers: "No backers found."
-      project: Project
-      refunded: Refunded?
-      requested_refund: "Requested refund?"
-      reward: Reward
-      submit: Search
-      total_backed: backed
-      total_backers: backers
-      total_backs: backs
-      total_users: Users
-      user: User
-      value: Value
+      index:
+        title: "Attendants manager"
+        menu: "Attendants"
+        anonymous: Anonymus?
+        confirmed: Confirmed?
+        credits: "credits used?"
+        id: Id
+        key: Key
+        no_backers: "No attendant found."
+        project: Project
+        refunded: "Refunded?"
+        requested_refund: "Refund requested?"
+        reward: Reward
+        submit: Search
+        total_backed: Total revenue
+        total_backers: attendants
+        total_backs: registrations
+        total_users: usuers
+        user: User
+        value: Value
+        total_paid: "Value issued"
