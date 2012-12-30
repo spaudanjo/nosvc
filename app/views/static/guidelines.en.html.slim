@@ -1,0 +1,13 @@
+- content_for :header_featured do
+  #banner_how_it_works
+#page_content
+  .container
+    .static_default
+      .sidebar
+        ul
+          li.one= link_to t('.sidebar.how_it_works'), "#how_it_works", class: "how_it_works_link"
+          li.two= link_to t('.sidebar.who_organizes_the_meetings'), "#who_organizes_the_meetings", class: "who_organizes_the_meetings_link"
+          li.three= link_to t('.sidebar.how_much'), "#how_much", class: "how_much_link"
+          li.four= link_to t('.sidebar.why_use'), "#why_use", class: "why_use_link"
+      .default_text= render 'guidelines_text'
+    .clearfix
