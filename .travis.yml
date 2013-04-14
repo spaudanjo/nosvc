@@ -1,4 +1,4 @@
-rvm: 1.9.2
+rvm: 1.9.3
 
 before_script:
   - "cp config/database.sample.yml config/database.yml"
@@ -14,4 +14,4 @@ script: "bundle exec rspec spec/ && bundle exec rspec acceptance/"
 
 branches:
   only:
-    - master
+    - travis_test
