@@ -101,9 +101,15 @@ group :test, :development do
   gem 'shoulda-matchers'
   gem 'factory_girl_rails', '1.7.0'
   gem 'capybara', ">= 2.0.3"
+
 end
 
 group :development do
   gem 'mailcatcher'
-  gem 'ruby-debug19'
+
+  gem 'pry-rails'                                                                                           
+  gem 'pry-nav'
+  gem 'pry-stack_explorer'
+  gem 'pry-debugger'
+
 end
