@@ -411,6 +411,7 @@ en:
         paypal_cancel: "Your payment via PayPal has been canceled. Please, try again."
         paypal_description: "%{value} for the registration for the gathering %{project_name}"
         paypal_error: "Ooops. There was a problem to send you payment via PayPal. Please, try again."
+
         success: "You have registered successfully. Thank you!"
       new:
         cannot_back: "It is not possible to register in this gathering right now. Please, do not give up and try later."
