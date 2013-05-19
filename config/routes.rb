@@ -12,7 +12,9 @@ Catarse::Application.routes.draw do
     resources :emails, :only => [ :index ]
   end
 
-  mount CatarseMoip::Engine => "/", :as => "catarse_moip"
+  # mount CatarseMoip::Engine => "/", :as => "catarse_moip"
+  mount CatarsePaypalExpress::Engine => "/", :as => "catarse_paypal_express"
+
 
   filter :locale
 
@@ -34,7 +36,7 @@ Catarse::Application.routes.draw do
   match "/contact" => "static#contact", :as => :contact
 
   match "/thank_you" => "payment_stream#thank_you", :as => :thank_you
-  match "/moip" => "payment_stream#moip", :as => :moip
+  # match "/moip" => "payment_stream#moip", :as => :moip
   match "/explore" => "explore#index", :as => :explore
   match "/explore#:quick" => "explore#index", :as => :explore_quick
   match "/credits" => "credits#index", :as => :credits

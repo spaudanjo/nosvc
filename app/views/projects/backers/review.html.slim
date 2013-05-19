@@ -59,7 +59,8 @@
               - if @backer.value > 0
                 .choose_payment
                   .moip
-                    = link_to t('.confirm_payment'),  'javascript:void(0);', :"data-payment_method_url" => catarse_moip.pay_payment_moip_path(@backer), :method => :get, :class => 'payment_link'
+                    = binding.pry
+                    = link_to t('.confirm_payment'),  'javascript:void(0);', :"data-payment_method_url" => catarse_paypal_express.payment_pay_paypal_express_path(@backer), :method => :get, :class => 'payment_link'
                     span= t('.confirm_payment_hind')
               - elsif @backer.value == 0
                 .free
