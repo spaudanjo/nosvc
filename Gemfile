@@ -111,5 +111,7 @@ group :development do
   gem 'pry-nav'
   gem 'pry-stack_explorer'
   gem 'pry-debugger'
-
 end
+
+gem 'newrelic_rpm'
+
